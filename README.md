@@ -21,3 +21,13 @@ Build custom images if needed to test different releases (Use different tags whe
 ```bash
 $ docker build -t ltozi/k8s-probe-spring:latest .
 ```
+
+Hint: to make custom images tests locally on minikube you can build images using minikube docker env before making the build
+
+```shell
+#first call this line to set the proper local env
+eval $(minikube -p minikube docker-env)
+
+#build the image directly into the minikube docker context
+docker build -t ltozi/k8s-probe-spring:latest .
+```
