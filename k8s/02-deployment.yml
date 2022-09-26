@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: ltozi/k8s-probe-spring:latest
+          image: ghcr.io/ltozi/k8s-probe-spring:1.0.0
           imagePullPolicy: IfNotPresent
           resources:
             limits:
