@@ -29,5 +29,7 @@ Hint: to make custom images tests locally on minikube you can build images using
 eval $(minikube -p minikube docker-env)
 
 #build the image directly into the minikube docker context
-docker build -t ltozi/k8s-probe-spring:latest .
+docker build -t ghcr.io/ltozi/k8s-probe-spring:latest .
+
+docker push ghcr.io/ltozi/k8s-probe-spring:latest
 ```
