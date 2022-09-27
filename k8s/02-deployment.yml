@@ -5,7 +5,7 @@ metadata:
   name: app
   namespace: k8s-probe-spring
 spec:
-  replicas: 4
+  replicas: 1
   selector:
     matchLabels:
       role: app
